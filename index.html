@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"><!-- viewport: area de la pagina we visible para el usuario, with: tamaño de la pantalla del dispositivo, initial-scale: zoom inicial user-scalable: si puede o no hacer zoom--> 
+	<meta name="author" content="Jorge Cardenas"><!-- nombre de autor de la pagina-->
+	<meta name="keywods" content="Compilado html"><!-- tags de la pagina-->
+	<meta name="description" content="voy a poner toda lo aprendido en un solo lado"><!-- descripcion de la pagina-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- fuentes de google -->
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico" rel="stylesheet">
+
+	<title>Esto aparece en la pestaña de la pagina</title>
+</head>
+
+<body>
+	<header>Encabezado de la pagina, voy a jugar al dialogo bulgar<!-- Header es facil de ubicar como encabezado (CMD+Shift+7 comentarios en sublimetext)-->
+		<h1 id="h1" title="Solo es uno por pagina">Titulo principal</h1><!-- title agrega una nota que es visible al pasar el cursor sobre el texto, solo se debe usar un h1 en la pagina	-->
+	</header>
+	<article id="text">
+		<a href="#hipervinculos"><input type="button" value="A hipervinculos"></a>
+		<h2 class="title-2"><em><strong>Texto normal</strong></em></h2><!-- strong es negrillas em es cursivas-->
+
+		<p id="p_uno" align="center">Parrafo sin nada <br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.</p> <!-- br es un salto de linea normal -->
+		<p id="p_dos" align="right">Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. <br>Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur.</p>
+		<p id="p_tres" align="left">Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<pre id="p_cuatro">Tal cual como se escribe en el HTML,
+		 consectetur adipisicing elit, 
+		 sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. 
+		Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. 
+
+		Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. 
+
+
+		Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</pre> <!-- lo muestra tal cual como lo escribí -->
+	</article>
+	<article>
+		<h2>Listas</h2>
+		<h3>Lista ordenada ol</h3>
+		<ol class="listas">
+			<li value="10">Uno</li> <!-- value hace que la lista inicie en un numero determinado -->
+			<li>Dos</li>
+			<li>Tres</li>
+		</ol>
+		<h3>Listas sin orden, en viñetas ul</h3>
+		<ul class="listas">
+			<li type="disc">Un algo</li> <!-- puntos negros -->
+			<li type=”circle”>Otro algo</li><!-- puntos con el fondo blanco  -->
+			<li type=”square”>Un algo parecido al otro algo</li> <!-- cuadrados -->
+		</ul>
+		<h3> listado de definiciones,  &lt;dl&gt;,  &lt;dt&gt; y  &lt;dd&gt;.</h3> <!-- reemplazas < Por &lt; Y > Por &gt; cuando quieres que aparesca como texto -->
+		<dl class="listas">
+			<dt>¿Que carajos es?</dt>
+			<dd>Pues es esto cajarajo!!!</dd>
+		</dl>
+
+		<h3>Listas anidadas una dentro de la otra</h3>
+		<ol class="listas">
+			<li>Algo ordenado</li>
+			<ul>
+				<li>Con</li>
+				<li>mucho</li>
+				<li>Desorden</li>
+			</ul>
+			<li>Sigue ordenado</li>
+			<dl>
+				<dt>Para explicar</dt>
+				<dd>Alguna tonteria que no importa porque en todo caso es una deficion anidada en una lista ordenada debajo de una lista ordenada que contiene una lista de viñetas</dd>
+			</dl>
+
+		</ol>
+	</article>
+	<article>
+		<h2><img title="Logo Concierto" alt="Logo Concierto" src="img/concert_logo.png"> Si no adivinas ahora siguen las imagenes</h2> <!-- title es lo que aparece cuando pasas el cursor sobre la imagen o texto y alt sirve para mostrar que carajos es la imagen en caso de que por algun motivo no cargue la imagen, asi no pierde el contexto -->
+		<img src="img/concert.jpg" width="30%"> <!-- width es el alto, puedes poner el porcentaje de la pantalla que debe cubrir -->
+		<img src="img/concert.jpg" height="300"> <!-- height es el ancho, se puede usar porcentaje o pixeles fijos -->
+	</article>
+	<article>
+		<h2>Encasillemoslo en tablas, columna X fila = celda</h2>
+		<table border="1" cellpadding="10" cellspacing="0" bordercolor="#2E2EFE"> <!-- iniciamos la tabla, border es si queremos dejar borde, cellpadding para darle un tamaño a las celdas -->
+			<thead> <!-- encabezado de la tabla -->
+				<tr> <!-- siempre abre primero -->
+					<th>Cod</th> <!-- este o mejor td, abre segundo -->
+					<th>Producto</th>
+					<th>¡¿A como?!</th>
+				</tr>
+			</thead>
+			<tbody> <!-- cuerpo de la tabla -->
+				<tr>
+					<td>01</td>
+					<td>Pendejada</td>
+					<td>Bien cara</td>
+				</tr>
+				<tr>
+					<td rowspan="2">02</td> <!-- rowspan combina columnas -->
+					<td>Otra cosa</td>
+					<td>Muy cara</td>
+				</tr>
+				<tr>
+					<td>Una igual</td>
+					<td>Mas cara</td>				
+				</tr>
+			</tbody>
+			<tfoot> <!-- pie de tabla -->
+				<tr>
+					<th colspan="2">Ah carajo</th> <!-- colspan fusiona o combina filas en este caso 2-->
+					<td>Uy, sumó mucho!!!</td>
+				</tr>
+			</tfoot>	
+		</table>
+	</article>
+	<article>
+		<h2 id="formulario">Ahora tocan los formularios</h2><br/>
+		<form name="formcontacto" autocomplete="on">
+			<fieldset> <!-- abre el cuadrante donde se contiene el formulario -->
+				<legend>Datos del sujeto</legend>
+				<label for="search">¿que tanto busca?</label>
+				<input type="search" id="search" placeholder="Nada!!"><br/>
+				<label for="nombre">¿Como le dicen?: </label>
+				<input type="text" id="nombre" placeholder="Pepito" required ><br/> <!-- texto normal -->
+				<label for="fechanacimiento">¿Cuando lo parieron?: </label>
+				<input type="date" id="fechanacimiento" value="1990-01-01"><br/> <!-- fecha -->
+				<label for="edad">Osea, ¿cuantos años?: </label>
+				<input type="number" id="edad" value="28" required><br/> <!-- numeros -->
+				<label for="genero">¿Pinta o Buenasa?: </label>
+				<p>Soy pinta men</p>			<input type="radio" name="genero" checked>
+				<p>¿que te pasa?, soy guapa</p>	<input type="radio" name="genero"><br/>
+				<label for="ocupacion">¿Y que hace?: </label>
+				<select>
+					<option disabled="true" selected>Seleccione una opcion</option>
+					<option value="Estudio">Estudio</option>
+					<option value="Trabajo">Trabajo</option>
+					<option value="NiNi">NiNi</option>
+				</select><br/>
+				<label for="tel">¿donde le marco?</label>
+				<input type="tel" id="tel" placeholder="300 200 1010"><br/>
+				<label for="time">Bueno!!, ¿hasta que horas?</label>
+				<input type="time" id="time" value="14:00"><br/>
+				<label for="color">¡Pintela!: </label>
+				<input type="color" id="color" value="#210B61"><br/> <!-- selecciona un color -->
+				<label for="coment">Cuente a ver: </label>
+				<textarea name="name" rows="8" cols="20" placeholder="Bla Bla Bla"></textarea><br/>
+				<label for="now">y ahora que hora es, fecha, hora, am/pm</label>
+				<input type="datetime-local" id="now"><br/> <!-- Fecha y hora local -->
+				<label for="doc">muestre el archivo: plano, word, excel o de los otros</label>
+				<input type="file" id="doc"><br/> <!-- subir archivo desde el computador -->
+				<label for="mail">escriba el correo pa' llenarlo de publicidad</label>
+				<input type="email" id="mail"><br/> <!-- correo electronico -->
+				<label for="month">El mes que mas bebió</label>
+				<input type="month" id="month"><br/> <!-- mes especifico -->
+				<label for="week">Semanas laboradas viejo men</label>
+				<input type="week" id="week"><br/>
+				<label for="rango">De 1 a 10, ¿que tal le va con su pareja?</label>
+				<input type="range" id="rango" min="0" max="10" value="10"><br/> <!-- barra de rango -->
+				<label for="url">sin pagina no sos nada</label>
+				<input type="url" id="url"><br/>
+				<label for="psw"> ponga la clave pues</label>
+				<input type="password" id="psw"> 	<!-- en este espacio se sensura la clave -->
+				<p>Boton HTML, pinche aqui!!<br/><input type="Button" value="boton html"></p> <!-- Boton para html -->
+				<label for="accept">Acepto terminos y condiciones: </label>
+				<br>
+				<input type="checkbox" name="accept" checked> <!-- check box para poner chulito a diferentes opciones -->
+
+				<input type="submit" value="send"> <!-- no envia si no se llena los que dicen required -->
+				<input type="reset" value="clean">
+				<!--  a tener en cuenta
+
+				name 	=referenciar un campo y diferenciarlo
+				id 		=asignar identificacion unica, es buscada por el "for"
+				disable value="true" o "false"
+				readonly	= nunca se habilita a diferencia de disable, es para cuadros que son solo de lectura
+				maxlength 	=numero maximo de caracteres
+				max 		= valor maximo
+				min 		=valor minimo
+				value 		=valor por defecto
+				step 		=tipo number, usa flechas de incremento a numero determinado por nosotros
+				placeholder	= dar una pista sobre que escribir, al digitar algo desaparece
+
+
+				https://caniuse.com/	-->
+			</fieldset>
+		</form>
+	</article>
+	<article><h2 id="hipervinculos">Ahora los hipervinculos</h2>
+		<a href="https://www.facebook.com/XiaomiUSA/" target="_blank" data-stat-id="dca395cb3649a61e" onclick="_msq.push(['trackEvent', 'e1f0ef578ab3f9f3-dca395cb3649a61e', 'https://www.facebook.com/XiaomiUSA/', 'pcpid']);">Facebook Xiaomi</a>
+
+	<a href="html/enlace.html"> a la otra pagina </a> <br>  <!-- enlace relativo a enlace.html -->
+	<a href="html/enlace.html"  target="_blank"><input type="button" value="Pagina siguiente"></a><br> <!-- boton a enlace.html y  target="_blank" que lo abre en una pestaña nueva-->
+	<a href="#h1"><input type="button" value="Inicio"></a><br> <!-- esta es un ancla a la parte de la pagina identificada con el id h1 -->
+	<a href="mailto:jorgecardt@gmail.com?subject==feedback ejemplo"><input type="button" value="eMail me"></a><br> <!-- enviame un email al correo referenciado -->
+	<a href="html/enlace.html"><img src="img/HTML5.svg" alt="Logo de referencia" title="logo de referencia" width="150px"></a><br><!-- en lugar de un boton, una imagen -->
+	<a href="img/HTML5.svg" download="img/HTML5.svg">Descargar<br><img src="img/HTML5.svg" alt="Logo de referencia" title="logo de referencia" width="150px"></a> <!-- descarga la imagen que dice la ruta download --></article>
+	<a href="https://encrypted.google.com" target="_blank"> a google </a>
+	<article><h2>Explicacion etiquetas semanticas</h2>
+	<p>Header: encabezado de la pagina web, nav: seccion con los enlaces de navegacion a las diferentes partes de nuestra pagina, section: se usa para agrupar eementos relacionados, article: es usado para referenciar cualquier contenido, aside: sub menu de navegacion lateral o publicidad, footer: pie de pagina para copyrig</p>
+	</article>
+	<article>
+		<h2>el mundo multimedia está aquí!!</h2>
+		<h3>Audio</h3>
+		<audio src="audio/audio.mp3" controls loop preload="auto" type="audio/mp3"><!-- autoplay --> </audio><p>este es un loop</p> <!-- controls es el paquete que contiene lo necesario para reproducir el archivo (boton pausa y reproduccion, control de volumen y barra de progreso)
+		autoplay reproduce automaticamente el archivo, si quieres desesperar a alguien lo puedes hacer sin controles
+		loop hace que se reprodusca de nuevo al terminar increible con el autoplay para desesperar	-->
+		<h4>Preload</h4>
+		<p>Preload es lo mejor para cuando la pagina tiene mucha cosa y anda lento, puedes poner en estado activo o no de esta forma: con "none" no almacena los archivos y "auto" los guarda en la memoria temporal</p>
+		<h3>Video</h3>
+		<p>la misma joda que el audio solo que puedes usar width (ancho), height (alto) y poster (pone una imagen en caso de no cargar el video).</p>
+		<video controls src="video/video.mp4" poster="img/concert.jpg" width="40%">
+			<!-- <source src="video/video.ogv" type="video/ogg">
+			<source src="video/video.webm" type="video/webm"> -->
+				Tu navegador es del asco, no reconoce el formato del video
+		</video>
+	</article>
+	<article>
+		<h2>Paginas externas con iframe</h2>
+		<dl>
+			<dt>sandbox</dt>
+			<dd>ayuda a evitar problemas al abrir una pagina externa, tiene ciertas opciones como:</dd>
+			<ul>
+				<li>allow-forms: para permitir formularios y enviar los datos</li>
+				<li>allow-same-origin: no se</li>
+				<li>allow-scripts: permite ejecutar JS, camara y documentos en equipo</li>
+				<li>allow-top-navigation: Permite que cambie el contenido de nuestra pagina</li>
+				<li>allow-popup: permite entanas emergentes</li>
+			</ul>
+			<dt>srcdoc</dt>
+			<dd>Permite agregar directamente al iframe codigo html</dd>
+			<dt>allow-fullscreen</dt>
+			<dd>Activa la opcio pantalla completa en caso que el contenido lo tenga</dd>
+		</dl>
+		<h3>Mapa de Google</h3>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15906.931684720052!2d-74.07113580000001!3d4.64166!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1518129405422" width="600" height="450" frameborder="0" style="border:0" allowfullscreen sandbox="allow_forms">Que cosas... No se puede cargar el frame</iframe>
+	</article>
+	<article>
+		<h2>SVG</h2>
+		<p>que mierdero, no lo entiendo del todo bien, pero bueno, es un formato abierto que consiste en vectores, si lo programas puedes animarlo. <br>Puedes importar un svg como una imagen normal</p>
+		<svg width="100" height="100">
+			<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="red" /> Que mala suerte, tu navegador no soporta un simple SVG.
+		</svg>
+		<ol class="listas">
+			<li>cicle: circulo</li>
+			<svg width="200" height="200">
+				<circle cx="100" cy="100" r="50" fill="blue" stroke="black" stroke-width="5" />
+			</svg>
+			<li>rect: rectangulos</li>
+			<svg width="200" height="200">
+				<rect width="50" height="40" fill="blue" stroke="black" stroke-width="5" />
+			</svg>
+			<li>polygon: poligono</li>
+			<svg width="200" height="200">
+				<polygon points="100,10 50,20 150,45" fill="blue" stroke="black" stroke-width="5"  />
+			</svg>
+			<li>polyline: lineas locas</li>
+			<svg width="200" height="200">
+				<polyline points="100,10 50,20 150,45 137,27 39,190" fill="none" stroke="red" stroke-width="7" />
+			</svg>
+			<li>ellipse: elipses</li>
+			<svg width="200" height="200">
+				<ellipse cx="50" cy="140" rx="130" ry="60" fill="blue" stroke="black" stroke-width="5" />
+			</svg>
+			<li>line: lineas</li>
+			<svg width="200" height="200">
+				<line x1="10" y1="10" x2="150" y2="100" stroke="black" stroke-width="5" />
+			</svg>
+		</ol>
+		<p>todo esto es para decir que se puede construir una imagen con estos terminos, puedes modificar el color, forma, tamaños etc. <br>Bueno, tenemos que crear el espacio de trabajo con "svg" le damos atrivutos de width y height depues la figura con atributos cx, cypara posicion y todo eso, como r para el radio del circulo. fill para color del relleno, stroke para el borde strokw-width grosor del borde</p>
+		<p>Bueno otras etiquetas SVG</p>
+		<ul class="listas">
+			<li>g: herencia papá!!, puedes poner todo lo que sea relleno y cosas asi, los vecntores que crees dentro heredaran esas caracteristicas</li>
+			<li>defs</li>
+			<li>title</li>
+			<li>desc</li>
+			<li>image</li>
+			<li>use</li>
+		</ul>
+	</article>
+	<footer><p>Derechos reservados, si lo va a usar me tiene que pagar</p></footer>
+</body>
+</html>

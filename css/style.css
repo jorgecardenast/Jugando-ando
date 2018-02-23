@@ -1,0 +1,117 @@
+body{
+	margin: 5%;
+	background-color: #F7F2E0;
+	font-family: 'Raleway', sans-serif;
+	color: #848484;
+}
+header{
+	font-family: 'Pacifico', cursive;
+	font-size: 30px;
+	color: #848484;
+	display: block;
+	margin: 0 auto;
+}
+h2{
+	font-family: 'Pacifico', cursive;
+	font-size: 30px;
+	color: #848484;
+}
+h3{
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	color: #848484;
+}
+p{
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+	color: #848484;
+}
+img{
+	border-radius: 10px; /*redondea las esquilas*/
+}
+footer{
+	margin-top: 30px;
+}
+/*con un # se llaman los id del html*/
+#p_uno{
+	color: #848484;
+	text-align: center;
+	margin: auto;
+    width: 50%;
+}
+#p_dos{
+	text-align: right;
+}
+#p_tres{
+	text-align: left;
+}
+#p_cuatro{
+	font-family: 'Dancing Script';
+	font-size: 25px;
+}
+/*para llamar a una clase que puede estar en mil y una etiquetas*/
+.listas{
+	font-family: 'Dancing Script';
+	font-size: 25px;
+
+}
+/*busquedas persolanizadas*/
+a[href='https://encrypted.google.com']{ /*busca todos loes enlaces que van a google*/
+	color: red;
+}
+img[src$=svg]{ /*el simbolo $ hace que busque al final, como en la extension*/
+	border-bottom: 5px;
+}
+img[src^=svg] /*^ es para el principio del valor del atributo*/
+img[src~=svg] /* ~ busca la palabra completa en la mitad de todos lo atrivutos que se tengan alt+Ñ en mac*/
+img[src|-=svg] img[src|-='icono'] /*este busca el inicio de el nombre del atributo, como cuando buscas toda imagen de nombre "icono *", el simbolo se logra con alt+1 = | */
+[title*='descripcion'] /*este es el selector universal, va a buscar a todos los que digan title con el valor descripcion*/
+/*a[href]
+	Todas las a con atributo href
+img[src$='iconos']
+	Todas las imágenes cuyo atributo src termina con la palabra 'iconos'
+img[src|='iconos']
+	Todas las imágenes cuyo atributo src contenga la palabra 'iconos'
+img[src^='iconos']
+	Todas las imágenes cuyo atributo src comience con la palabra 'iconos'*/
+
+*{ /*valido pa' todo mundo*/
+	margin: 5vh 5vw;
+}
+header + article { /*para todo article que este precedido por header*/
+	margin: 10%
+}
+h2 - p { /*hace referencia al hijo directo p del h2, solo el directo*/
+	text-decoration: underline; /*sub-rallado de texto*/
+}
+h2 ~ h3 {
+	/*¿existe?*/
+}
+article> h2 { /*para todo h2 hijos directos de los articulos*/
+	text-decoration-color: blue;
+}
+ul li { /*el selector decendente que no es tan estricto y puedes referenciar multiples elementos*/
+	list-style-type: square;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
