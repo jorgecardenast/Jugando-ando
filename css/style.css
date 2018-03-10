@@ -94,7 +94,40 @@ ul li { /*el selector decendente que no es tan estricto y puedes referenciar mul
 	list-style-type: square;
 }
 
- 
+ article[class^="caja"]{
+ 	border: 0.25em solid blue; /*tamaño del margen, estilo de borde y color*/
+ 	border: none; /*sin borde*/
+ 	border: hidden; /*sin borde, util para elementos que tienen conflictos con none como en tablas*/
+ 	border: dashed; /*serie de guiones*/
+ 	border: dotted; /*serie de puntos*/
+ 	border: double; /*dos lineas continuas separadas por una cantidad definida como border web*/
+ 	border: groove; /*efecto de undimiento*/
+ 	border: inset;  /*efecto de undimiento de una caja*/
+ 	border: outset; /*efecto de realce de una caja, inverso al inset*/
+ 	border: ridge;  /*la caja parece salir en 3D inverso a goove*/
+ 	border: solid;  /*linea continua*/
+
+ 	/*Por separado seria*/
+
+ 	border: 1em; /*tamaño del borde*/
+ 	border-style: outset; /*estilo de borde*/
+ 	border-color: #5b564d; /*color del borde*/
+
+ 	/*Margenes*/
+
+ 	margin: 0.25rem; /*recibe hasta 4 valores: superior, der, inferior, izq; 2 seria: superior/inferior, der/izq; un solo valor es por todo lado*/
+
+
+ 	padding: 0.25em; /*margen dentro del borde*/
+
+
+ 	display: inline-block;
+ 	height: 30rem;
+ 	width: 25rem;
+ 	overflow-y: scroll;
+ 	overflow-x: hidden;
+
+ }
 
 
 

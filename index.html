@@ -18,7 +18,7 @@
 	<header>Encabezado de la pagina, voy a jugar al dialogo bulgar<!-- Header es facil de ubicar como encabezado (CMD+Shift+7 comentarios en sublimetext)-->
 		<h1 id="h1" title="Solo es uno por pagina">Titulo principal</h1><!-- title agrega una nota que es visible al pasar el cursor sobre el texto, solo se debe usar un h1 en la pagina	-->
 	</header>
-	<article id="text">
+	<article id="text" class="caja1">
 		<a href="#hipervinculos"><input type="button" value="A hipervinculos"></a>
 		<h2 class="title-2"><em><strong>Texto normal</strong></em></h2><!-- strong es negrillas em es cursivas-->
 
@@ -45,7 +45,7 @@
 		Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</pre> <!-- lo muestra tal cual como lo escribí -->
 	</article>
-	<article>
+	<article class="caja2">
 		<h2>Listas</h2>
 		<h3>Lista ordenada ol</h3>
 		<ol class="listas">
@@ -81,12 +81,12 @@
 
 		</ol>
 	</article>
-	<article>
+	<article class="caja3">
 		<h2><img title="Logo Concierto" alt="Logo Concierto" src="img/concert_logo.png"> Si no adivinas ahora siguen las imagenes</h2> <!-- title es lo que aparece cuando pasas el cursor sobre la imagen o texto y alt sirve para mostrar que carajos es la imagen en caso de que por algun motivo no cargue la imagen, asi no pierde el contexto -->
 		<img src="img/concert.jpg" width="30%"> <!-- width es el alto, puedes poner el porcentaje de la pantalla que debe cubrir -->
 		<img src="img/concert.jpg" height="300"> <!-- height es el ancho, se puede usar porcentaje o pixeles fijos -->
 	</article>
-	<article>
+	<article class="caja4">
 		<h2>Encasillemoslo en tablas, columna X fila = celda</h2>
 		<table border="1" cellpadding="10" cellspacing="0" bordercolor="#2E2EFE"> <!-- iniciamos la tabla, border es si queremos dejar borde, cellpadding para darle un tamaño a las celdas -->
 			<thead> <!-- encabezado de la tabla -->
@@ -120,7 +120,7 @@
 			</tfoot>	
 		</table>
 	</article>
-	<article>
+	<article class="caja5">
 		<h2 id="formulario">Ahora tocan los formularios</h2><br/>
 		<form name="formcontacto" autocomplete="on">
 			<fieldset> <!-- abre el cuadrante donde se contiene el formulario -->
@@ -192,7 +192,7 @@
 			</fieldset>
 		</form>
 	</article>
-	<article><h2 id="hipervinculos">Ahora los hipervinculos</h2>
+	<article class="caja6"><h2 id="hipervinculos">Ahora los hipervinculos</h2>
 		<a href="https://www.facebook.com/XiaomiUSA/" target="_blank" data-stat-id="dca395cb3649a61e" onclick="_msq.push(['trackEvent', 'e1f0ef578ab3f9f3-dca395cb3649a61e', 'https://www.facebook.com/XiaomiUSA/', 'pcpid']);">Facebook Xiaomi</a>
 
 	<a href="html/enlace.html"> a la otra pagina </a> <br>  <!-- enlace relativo a enlace.html -->
@@ -202,10 +202,10 @@
 	<a href="html/enlace.html"><img src="img/HTML5.svg" alt="Logo de referencia" title="logo de referencia" width="150px"></a><br><!-- en lugar de un boton, una imagen -->
 	<a href="img/HTML5.svg" download="img/HTML5.svg">Descargar<br><img src="img/HTML5.svg" alt="Logo de referencia" title="logo de referencia" width="150px"></a> <!-- descarga la imagen que dice la ruta download --></article>
 	<a href="https://encrypted.google.com" target="_blank"> a google </a>
-	<article><h2>Explicacion etiquetas semanticas</h2>
+	<article class="caja7"><h2>Explicacion etiquetas semanticas</h2>
 	<p>Header: encabezado de la pagina web, nav: seccion con los enlaces de navegacion a las diferentes partes de nuestra pagina, section: se usa para agrupar eementos relacionados, article: es usado para referenciar cualquier contenido, aside: sub menu de navegacion lateral o publicidad, footer: pie de pagina para copyrig</p>
 	</article>
-	<article>
+	<article class="caja8">
 		<h2>el mundo multimedia está aquí!!</h2>
 		<h3>Audio</h3>
 		<audio src="audio/audio.mp3" controls loop preload="auto" type="audio/mp3"><!-- autoplay --> </audio><p>este es un loop</p> <!-- controls es el paquete que contiene lo necesario para reproducir el archivo (boton pausa y reproduccion, control de volumen y barra de progreso)
@@ -221,7 +221,7 @@
 				Tu navegador es del asco, no reconoce el formato del video
 		</video>
 	</article>
-	<article>
+	<article class="caja9">
 		<h2>Paginas externas con iframe</h2>
 		<dl>
 			<dt>sandbox</dt>
@@ -239,9 +239,9 @@
 			<dd>Activa la opcio pantalla completa en caso que el contenido lo tenga</dd>
 		</dl>
 		<h3>Mapa de Google</h3>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15906.931684720052!2d-74.07113580000001!3d4.64166!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1518129405422" width="600" height="450" frameborder="0" style="border:0" allowfullscreen sandbox="allow_forms">Que cosas... No se puede cargar el frame</iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15906.931684720052!2d-74.07113580000001!3d4.64166!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1518129405422" width="200" height="150" frameborder="0" style="border:0" allowfullscreen sandbox="allow_forms">Que cosas... No se puede cargar el frame</iframe>
 	</article>
-	<article>
+	<article class="caja10">
 		<h2>SVG</h2>
 		<p>que mierdero, no lo entiendo del todo bien, pero bueno, es un formato abierto que consiste en vectores, si lo programas puedes animarlo. <br>Puedes importar un svg como una imagen normal</p>
 		<svg width="100" height="100">
